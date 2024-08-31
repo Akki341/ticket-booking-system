@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        body, h1, p, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container Styling */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0; /* Light grey background */
+        }
+
+        /* Card Styling */
+        .card {
+            background-color: #007bff; /* Blue background */
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .card p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #28a745; /* Green button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/800x300.png?text=Booking+Confirmation" alt="Confirmation Image">
+            <h1>Your Seats Have Been Booked!</h1>
+            <p id="bookedSeatsInfo"></p>
+            <a href="index.html"><button>OK</button></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
